@@ -5,11 +5,9 @@
 // Этап-8 = реализован метод add() = проходят тесты добавления Контакта без дубликатов и Номеров для Контакта без дубликатов
 // Этап-13 = реализован метод findByNumber()
 // Этап-15 = создан пустой метод-заглушка findByName()
+// Этап-17 = вывести Адресную Книгу с телефонами
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class PhoneBook {
     private final Map<String, List<String>> contacts = new HashMap<>();
@@ -43,5 +41,12 @@ public class PhoneBook {
 
     public List<String> findByName(String name) {
         return contacts.get(name);
+    }
+
+    public void printAllNames() {
+        for (String name : contacts.keySet()) {
+            System.out.println(name);
+            System.out.println("\t" + Arrays.toString(contacts.get(name).toArray()));
+        }
     }
 }

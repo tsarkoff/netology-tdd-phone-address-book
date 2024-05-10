@@ -71,4 +71,9 @@ public class PhoneBookTest {
         List<String> phonesStored = phoneBook.findByName(name);
         Assertions.assertEquals(phonesStored, phonesExpected);
     }
+
+    @Test
+    void printAllNames() {
+        phoneBook.printAllNames();
+    }
 }

@@ -4,6 +4,7 @@
 // Этап-5 = создан пустой метод-заглушка add()
 // Этап-8 = реализован метод add() = проходят тесты добавления Контакта без дубликатов и Номеров для Контакта без дубликатов
 // Этап-13 = реализован метод findByNumber()
+// Этап-15 = создан пустой метод-заглушка findByName()
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -38,5 +39,9 @@ public class PhoneBook {
             }
         }
         return "";
+    }
+
+    public List<String> findByName(String name) {
+        return null;
     }
 }

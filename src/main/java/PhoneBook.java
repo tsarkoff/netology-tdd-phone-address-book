@@ -3,6 +3,7 @@
 // Этап-2 = создан пустой класс PhoneBook
 // Этап-5 = создан пустой метод-заглушка add()
 // Этап-8 = реализован метод add() = проходят тесты добавления Контакта без дубликатов и Номеров для Контакта без дубликатов
+// Этап-13 = реализован метод findByNumber()
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -31,6 +32,11 @@ public class PhoneBook {
     }
 
     public String findByNumber(String phoneNumber) {
-        return null;
+        for (String name : contacts.keySet()) {
+            if (contacts.get(name).contains(phoneNumber)) {
+                return name;
+            }
+        }
+        return "";
     }
 }

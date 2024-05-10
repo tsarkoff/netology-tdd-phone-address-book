@@ -42,6 +42,6 @@ public class PhoneBook {
     }
 
     public List<String> findByName(String name) {
-        return null;
+        return contacts.get(name);
     }
 }

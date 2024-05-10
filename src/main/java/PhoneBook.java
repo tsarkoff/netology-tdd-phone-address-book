@@ -29,4 +29,8 @@ public class PhoneBook {
 
         return getContactsNumber();
     }
+
+    public String findByNumber(String phoneNumber) {
+        return null;
+    }
 }
